@@ -77,7 +77,7 @@ export function EditBookModal({ book }: IBookProps) {
                         </DialogDescription>
                     </DialogHeader>
                     <Form {...form}>
-                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                             <FormField
                                 control={form.control}
                                 name="title"
@@ -168,7 +168,9 @@ export function EditBookModal({ book }: IBookProps) {
                                     </FormItem>
                                 )}
                             />
-                            <Button type="submit">Save changes</Button>
+                            <div className="text-right">
+                                <Button type="submit">Update Book</Button>
+                            </div>
                         </form>
                     </Form>
                 </DialogContent>

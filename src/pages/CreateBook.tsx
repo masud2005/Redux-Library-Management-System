@@ -33,7 +33,7 @@ const CreateBook = () => {
     };
 
     return (
-        <div className="flex justify-center items-center min-h-screen p-4">
+        <div className="flex justify-center items-center my-10">
             <Card className="w-full max-w-xl">
                 <CardHeader className="space-y-1 text-center">
                     <CardTitle className="text-3xl font-bold text-blue-600 dark:text-yellow-300">Add a New Book</CardTitle>
