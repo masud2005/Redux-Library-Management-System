@@ -14,13 +14,13 @@ const BorrowBookRow = ({ item }: BorrowBookRowProps) => {
     return (
         <TableRow className=" transition-colors duration-200 ease-in-out">
             {/* Desktop View */}
-            <TableCell className="px-6 py-4 whitespace-nowrap table-cell font-medium text-gray-800 dark:text-gray-300 text-base ">
+            <TableCell className="px-6 py-4 whitespace-nowrap table-cell font-medium text-gray-800 dark:text-gray-300 text-sm sm:text-[15px] ">
                 {item.book?.title}
             </TableCell>
-            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-gray-800 dark:text-gray-300 text-base ">
+            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-gray-800 dark:text-gray-300 text-sm sm:text-[15px] ">
                 {item.book.isbn}
             </TableCell>
-            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-center text-gray-800 dark:text-gray-300 text-base ">
+            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-center text-gray-800 dark:text-gray-300 text-sm sm:text-[15px] ">
                 {item.totalQuantity}
             </TableCell>
         </TableRow>

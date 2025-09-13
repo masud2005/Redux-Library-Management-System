@@ -32,12 +32,12 @@ const BookRow = ({ book }: IBookTableProps) => {
 
     return (
         <TableRow className=" transition-colors duration-200 ease-in-ou">
-            <TableCell className="px-6 py-4 whitespace-nowrap table-cell font-medium text-gray-900 dark:text-gray-200 text-sm md:text-base">{title}</TableCell>
-            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-gray-500 dark:text-gray-300 text-sm md:text-base">{author}</TableCell>
-            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-gray-500 dark:text-gray-300 text-sm md:text-base">{genre}</TableCell>
-            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-gray-500 dark:text-gray-300 text-sm md:text-base">{isbn}</TableCell>
-            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-center text-gray-500 dark:text-gray-300 text-sm md:text-base">{copies}</TableCell>
-            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-center text-sm md:text-base">
+            <TableCell className="px-6 py-4 whitespace-nowrap table-cell font-medium text-gray-900 dark:text-gray-200 text-sm md:text-[15px]">{title}</TableCell>
+            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-gray-500 dark:text-gray-300 text-sm md:text-[15px]">{author}</TableCell>
+            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-gray-500 dark:text-gray-300 text-sm md:text-[15px]">{genre}</TableCell>
+            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-gray-500 dark:text-gray-300 text-sm md:text-[15px]">{isbn}</TableCell>
+            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-center text-gray-500 dark:text-gray-300 text-sm md:text-[15px]">{copies}</TableCell>
+            <TableCell className="px-6 py-4 whitespace-nowrap table-cell text-center text-sm md:text-[15px]">
                 <span className={cn(
                     "font-semibold text-sm px-2 py-1 rounded-full",
                     {

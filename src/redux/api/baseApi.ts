@@ -5,9 +5,12 @@ export const baseApi = createApi({
     baseQuery: fetchBaseQuery({ baseUrl: "https://library-management-api-henna.vercel.app/api" }),
     tagTypes: ["book", "borrow"],
     endpoints: (builder) => ({
-        // Get all books
+        // Get all books with filtering, sorting, and limiting
         getBooks: builder.query({
-            query: () => '/books',
+            query: (params) => {
+                const queryString = new URLSearchParams(params).toString();
+                return `/books?${queryString}`;
+            },
             providesTags: ['book']
         }),
 

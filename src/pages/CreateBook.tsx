@@ -33,10 +33,10 @@ const CreateBook = () => {
     };
 
     return (
-        <div className="flex justify-center items-center my-10">
+        <div className="flex justify-center items-center my-10 px-4">
             <Card className="w-full max-w-xl">
                 <CardHeader className="space-y-1 text-center">
-                    <CardTitle className="text-3xl font-bold text-blue-600 dark:text-yellow-300">Add a New Book</CardTitle>
+                    <CardTitle className="text-2xl font-bold text-blue-600 dark:text-yellow-300">Add a New Book</CardTitle>
                     <CardDescription>
                         Fill in the details below to add a new book to your library.
                     </CardDescription>
@@ -186,7 +186,7 @@ const CreateBook = () => {
                                 )}
                             />
 
-                            <Button type="submit" className="w-full ">Create Book</Button>
+                            <Button type="submit" className="w-full">Create Book</Button>
                         </form>
                     </Form>
                 </CardContent>
